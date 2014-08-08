@@ -8,26 +8,35 @@
 
 <body>
 	<h1>Welcome New Employee!!!</h1>
-<form method="post">
-	<fieldset>
-		<legend>Information</legend>		
-		First Name:<input type="text" id="one" class="odd"><br>
-		Last Name:<input type="text" id="two" class="even"><br>
-		Address:<input type="text" id="three" class="odd"><br>
-		City:<input type="text" id="four" class="even"><br>
-		State:<input type="text" id="five" class="odd"><br>
-		Zip Code:<input type="text" id="six" class="even"><br>
-	</fieldset>
-
+	
+	<div id="submitForm">
+		<legend>Information</legend><br>		
+		<div><label>First Name:<input type="text" id="one" class="odd"></label></div><br>
+		<div><label>Last Name:<input type="text" id="two" class="even"></label></div><br>
+		<div><label>Address:<input type="text" id="three" class="odd"></label></div><br>
+		<div><label>City:<input type="text" id="four" class="even"></label></div><br>
+		<div><label>State:<input type="text" id="five" class="odd"></label></div><br>
+		<div><label>Zip Code:<input type="text" id="six" class="even"></label></div><br>
+		<div><label>Position:
+		
 	<select>
 		<option value="newby">Entry-Level</option>
 		<option value="lead">Lead Associate</option>
 		<option value="great">Assistant Manager</option>
 		<option value="yes">Manager</option>
 	</select>
+	</label></div>
 	
-	<input type="button" onClick="checkForms()" value="Submit">
-</form>
+		<input type="button" name="submit" value="Submit" onClick="makeMessage();">
+	
+	</div>
+	
+
+	<div id="welcomeMessage">
+	</div>
+	
+	
+
 	
 </body>
 </html>
