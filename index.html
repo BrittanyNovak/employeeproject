@@ -8,7 +8,7 @@
 
 <body>
 	<h1>Welcome New Employee!!!</h1>
-<form>
+<form method="post">
 	<fieldset>
 		<legend>Information</legend>		
 		First Name:<input type="text" id="one" class="odd"><br>
@@ -18,7 +18,6 @@
 		State:<input type="text" id="five" class="odd"><br>
 		Zip Code:<input type="text" id="six" class="even"><br>
 	</fieldset>
-</form>
 
 	<select>
 		<option value="newby">Entry-Level</option>
@@ -26,6 +25,9 @@
 		<option value="great">Assistant Manager</option>
 		<option value="yes">Manager</option>
 	</select>
+	
+	<input type="button" onClick="checkForms()" value="Submit">
+</form>
 	
 </body>
 </html>
